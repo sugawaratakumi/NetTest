@@ -286,7 +286,7 @@ namespace ChatSystem
             bool turn = (connectMode == ChatSystem.ConnectMode.host);
             string received = string.Empty;
             string Hhand;
-            string Chand;
+            
             while (true)
             {
                 if (turn)
@@ -378,7 +378,7 @@ namespace ChatSystem
                     else
                     {   // Client
                         inputSt = Hand(); // 入力文字で送信
-                        Chand = inputSt;
+                        
                         if (inputSt.Length > maxLength)
                         {
                             inputSt = inputSt.Substring(0, maxLength - EOF.Length);
